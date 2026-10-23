@@ -5,7 +5,7 @@
 
 [![DepSweep](https://img.shields.io/badge/DepSweep-v1.0.0-blue)](https://github.com/cass/depsweep)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/cass/depsweep/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/cass/depsweep/main.yml)](https://github.com/cass/depsweep/actions)
+[![Node.js Package](https://github.com/bobbybacklogs/depsweep/actions/workflows/npm-publish.yml/badge.svg?branch=main&event=public)](https://github.com/bobbybacklogs/depsweep/actions/workflows/npm-publish.yml)
 [![npm version](https://img.shields.io/npm/v/depsweep)](https://www.npmjs.com/package/depsweep)
 
 ---
