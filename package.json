@@ -1,5 +1,5 @@
 {
-  "name": "deepsweep",
+  "name": "@genoventures-labs/depsweep",
   "version": "1.0.0",
   "description": "Scan projects for outdated and vulnerable npm dependencies",
   "bin": {
