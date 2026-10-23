@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Scan projects for outdated and vulnerable npm dependencies",
   "bin": {
-    "depsweep": "./bin/depsweep.js"
+    "depsweep": "bin/depsweep.js"
   },
   "main": "src/index.js",
   "scripts": {
