@@ -1,0 +1,4 @@
+assets/
+state/
+node_modules/
+*.tgz
