@@ -1,13 +1,13 @@
 {
-  "name": "@genoventures-labs/deepsweep",
+  "name": "@genoventures-labs/depsweep",
   "version": "1.0.0",
   "description": "Scan projects for outdated and vulnerable npm dependencies",
   "bin": {
-    "deepsweep": "./bin/deepsweep.js"
+    "depsweep": "./bin/depsweep.js"
   },
   "main": "src/index.js",
   "scripts": {
-    "start": "node bin/deepsweep.js",
+    "start": "node bin/depsweep.js",
     "test": "node --test"
   },
   "dependencies": {

@@ -3,7 +3,7 @@ const { program } = require('commander');
 const pkg = require('../package.json');
 
 program
-  .name('deepsweep')
+  .name('depsweep')
   .description('Scan projects for outdated and vulnerable npm dependencies')
   .version(pkg.version);
 

@@ -1,18 +1,18 @@
-# DepSweep
+# depsweep
 <p align="center">
-  <img src="./assets/lockup.png" alt="DepSweep">
+  <img src="./assets/lockup.png" alt="depsweep">
 </p>
 
-[![DepSweep](https://img.shields.io/badge/DepSweep-v1.0.0-blue)](https://github.com/cass/depsweep)
-[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/cass/depsweep/blob/main/LICENSE)
+[![depsweep](https://img.shields.io/badge/depsweep-v1.0.0-blue)](https://github.com/bobbybacklogs/depsweep)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/bobbybacklogs/depsweep/blob/main/LICENSE)
 [![Node.js Package](https://github.com/bobbybacklogs/depsweep/actions/workflows/npm-publish.yml/badge.svg?branch=main&event=public)](https://github.com/bobbybacklogs/depsweep/actions/workflows/npm-publish.yml)
-[![npm version](https://img.shields.io/npm/v/depsweep)](https://www.npmjs.com/package/depsweep)
+[![npm version](https://img.shields.io/npm/v/@genoventures-labs/depsweep)](https://www.npmjs.com/package/@genoventures-labs/depsweep)
 
 ---
 
 # Overview
-DepSweep is a CLI tool that scans individual projects or entire directory trees for outdated and vulnerable npm dependencies, then helps you update packages and fix security issues in one sweep.
-In a world-online-where vulnerable dependencies can compromise security and stability, DepSweep ensures your projects remain up-to-date and secure with minimal effort.
+depsweep is a CLI tool that scans individual projects or entire directory trees for outdated and vulnerable npm dependencies, then helps you update packages and fix security issues in one sweep.
+In a world where vulnerable dependencies can compromise security and stability, depsweep ensures your projects remain up-to-date and secure with minimal effort.
 
 # Features
 
@@ -27,7 +27,7 @@ In a world-online-where vulnerable dependencies can compromise security and stab
 
 # Installation
 
-To install DepSweep, use npm:
+To install depsweep, use npm:
 
 ```bash
 npm install -g @genoventures-labs/depsweep
@@ -35,7 +35,7 @@ npm install -g @genoventures-labs/depsweep
 
 # Usage
 
-After installation, you can use DepSweep via the command line:
+After installation, you can use depsweep via the command line:
 
 ```bash
 depsweep [options] <command>
@@ -61,27 +61,27 @@ depsweep fix
 
 # Commands
 
-DepSweep provides several commands to manage your dependencies:
+depsweep provides several commands to manage your dependencies:
 
 - `scan`: Scan a project for outdated and vulnerable dependencies.
 - `update`: Update dependencies to the latest secure versions.
 - `fix`: Fix security issues in your project.
 - `report`: Generate a comprehensive report on dependency status and security vulnerabilities.
-- `help`: Display help information for DepSweep commands and options.
+- `help`: Display help information for depsweep commands and options.
 
 # Options
 
-DepSweep supports several command-line options to customize its behavior:
+depsweep supports several command-line options to customize its behavior:
 
 - `-h, --help`: Show help information.
-- `-v, --version`: Display the current version of DepSweep.
+- `-v, --version`: Display the current version of depsweep.
 - `-d, --directory <path>`: Specify the directory to scan or update.
 - `-g, --global`: Include global npm packages in the scan or update.
 - `-q, --quiet`: Suppress non-essential output.
 - `-l, --log <file>`: Specify a file to write detailed logs.
-- `-c, --config <file>`: Specify a custom configuration file for DepSweep.
+- `-c, --config <file>`: Specify a custom configuration file for depsweep.
 - `-f, --force`: Force update or fix actions even if no vulnerabilities are detected.
-- `-s, --silent`: Run DepSweep in silent mode, suppressing all output except for errors.
+- `-s, --silent`: Run depsweep in silent mode, suppressing all output except for errors.
 - `-r, --report <file>`: Specify a file to write the dependency and security report.
 - `-e, --exclude <packages>`: Exclude specific packages from being scanned or updated.
 - `-t, --threshold <level>`: Set the vulnerability severity threshold for reporting (e.g., low, moderate, high, critical).
