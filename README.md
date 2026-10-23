@@ -30,7 +30,7 @@ In a world-online-where vulnerable dependencies can compromise security and stab
 To install DeepSweep, use npm:
 
 ```bash
-npm install -g deepsweep
+npm install -g @genoventures-labs/deepsweep
 ```
 
 # Usage
