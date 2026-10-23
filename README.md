@@ -1,18 +1,18 @@
-# DeepSweep
+# DepSweep
 <p align="center">
-  <img src="./assets/lockup.png" alt="DeepSweep">
+  <img src="./assets/lockup.png" alt="DepSweep">
 </p>
 
-[![DeepSweep](https://img.shields.io/badge/DeepSweep-v1.0.0-blue)](https://github.com/cass/deepsweep)
-[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/cass/deepsweep/blob/main/LICENSE)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/cass/deepsweep/main.yml)](https://github.com/cass/deepsweep/actions)
-[![npm version](https://img.shields.io/npm/v/deepsweep)](https://www.npmjs.com/package/deepsweep)
+[![DepSweep](https://img.shields.io/badge/DepSweep-v1.0.0-blue)](https://github.com/cass/depsweep)
+[![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/cass/depsweep/blob/main/LICENSE)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/cass/depsweep/main.yml)](https://github.com/cass/depsweep/actions)
+[![npm version](https://img.shields.io/npm/v/depsweep)](https://www.npmjs.com/package/depsweep)
 
 ---
 
 # Overview
-DeepSweep is a CLI tool that scans individual projects or entire directory trees for outdated and vulnerable npm dependencies, then helps you update packages and fix security issues in one sweep.
-In a world-online-where vulnerable dependencies can compromise security and stability, DeepSweep ensures your projects remain up-to-date and secure with minimal effort.
+DepSweep is a CLI tool that scans individual projects or entire directory trees for outdated and vulnerable npm dependencies, then helps you update packages and fix security issues in one sweep.
+In a world-online-where vulnerable dependencies can compromise security and stability, DepSweep ensures your projects remain up-to-date and secure with minimal effort.
 
 # Features
 
@@ -27,61 +27,61 @@ In a world-online-where vulnerable dependencies can compromise security and stab
 
 # Installation
 
-To install DeepSweep, use npm:
+To install DepSweep, use npm:
 
 ```bash
-npm install -g @genoventures-labs/deepsweep
+npm install -g @genoventures-labs/depsweep
 ```
 
 # Usage
 
-After installation, you can use DeepSweep via the command line:
+After installation, you can use DepSweep via the command line:
 
 ```bash
-deepsweep [options] <command>
+depsweep [options] <command>
 ```
 
 For example, to scan a project for outdated dependencies:
 
 ```bash
-deepsweep scan
+depsweep scan
 ```
 
 To update dependencies to the latest secure versions:
 
 ```bash
-deepsweep update
+depsweep update
 ```
 
 To fix security issues:
 
 ```bash
-deepsweep fix
+depsweep fix
 ```
 
 # Commands
 
-DeepSweep provides several commands to manage your dependencies:
+DepSweep provides several commands to manage your dependencies:
 
 - `scan`: Scan a project for outdated and vulnerable dependencies.
 - `update`: Update dependencies to the latest secure versions.
 - `fix`: Fix security issues in your project.
 - `report`: Generate a comprehensive report on dependency status and security vulnerabilities.
-- `help`: Display help information for DeepSweep commands and options.
+- `help`: Display help information for DepSweep commands and options.
 
 # Options
 
-DeepSweep supports several command-line options to customize its behavior:
+DepSweep supports several command-line options to customize its behavior:
 
 - `-h, --help`: Show help information.
-- `-v, --version`: Display the current version of DeepSweep.
+- `-v, --version`: Display the current version of DepSweep.
 - `-d, --directory <path>`: Specify the directory to scan or update.
 - `-g, --global`: Include global npm packages in the scan or update.
 - `-q, --quiet`: Suppress non-essential output.
 - `-l, --log <file>`: Specify a file to write detailed logs.
-- `-c, --config <file>`: Specify a custom configuration file for DeepSweep.
+- `-c, --config <file>`: Specify a custom configuration file for DepSweep.
 - `-f, --force`: Force update or fix actions even if no vulnerabilities are detected.
-- `-s, --silent`: Run DeepSweep in silent mode, suppressing all output except for errors.
+- `-s, --silent`: Run DepSweep in silent mode, suppressing all output except for errors.
 - `-r, --report <file>`: Specify a file to write the dependency and security report.
 - `-e, --exclude <packages>`: Exclude specific packages from being scanned or updated.
 - `-t, --threshold <level>`: Set the vulnerability severity threshold for reporting (e.g., low, moderate, high, critical).
