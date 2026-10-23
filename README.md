@@ -3,7 +3,7 @@
   <img src="./assets/lockup.png" alt="depsweep">
 </p>
 
-[![depsweep](https://img.shields.io/badge/depsweep-v1.0.0-blue)](https://github.com/bobbybacklogs/depsweep)
+[![depsweep](https://img.shields.io/badge/depsweep-v1.0.1-blue)](https://github.com/bobbybacklogs/depsweep)
 [![License](https://img.shields.io/badge/License-MIT-blue)](https://github.com/bobbybacklogs/depsweep/blob/main/LICENSE)
 [![Node.js Package](https://github.com/bobbybacklogs/depsweep/actions/workflows/npm-publish.yml/badge.svg?branch=main&event=public)](https://github.com/bobbybacklogs/depsweep/actions/workflows/npm-publish.yml)
 [![npm version](https://img.shields.io/npm/v/@genoventures-labs/depsweep)](https://www.npmjs.com/package/@genoventures-labs/depsweep)
