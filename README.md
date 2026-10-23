@@ -59,6 +59,12 @@ To fix security issues:
 depsweep fix
 ```
 
+To generate a JSON report on dependency and security status:
+
+```bash
+depsweep report
+```
+
 # Commands
 
 depsweep provides several commands to manage your dependencies:
@@ -71,21 +77,42 @@ depsweep provides several commands to manage your dependencies:
 
 # Options
 
-depsweep supports several command-line options to customize its behavior:
+Global options (available before or after a command):
 
 - `-h, --help`: Show help information.
-- `-v, --version`: Display the current version of depsweep.
-- `-d, --directory <path>`: Specify the directory to scan or update.
-- `-g, --global`: Include global npm packages in the scan or update.
+- `-V, --version`: Display the current version of depsweep.
 - `-q, --quiet`: Suppress non-essential output.
-- `-l, --log <file>`: Specify a file to write detailed logs.
-- `-c, --config <file>`: Specify a custom configuration file for depsweep.
-- `-f, --force`: Force update or fix actions even if no vulnerabilities are detected.
-- `-s, --silent`: Run depsweep in silent mode, suppressing all output except for errors.
-- `-r, --report <file>`: Specify a file to write the dependency and security report.
-- `-e, --exclude <packages>`: Exclude specific packages from being scanned or updated.
-- `-t, --threshold <level>`: Set the vulnerability severity threshold for reporting (e.g., low, moderate, high, critical).
-- `-p, --package-manager <manager>`: Specify the package manager to use (e.g., npm, yarn).
-- `-b, --backup`: Create a backup of the current dependency state before making changes.
 - `-n, --no-color`: Disable colored output in the terminal.
+
+Command options:
+
+- `-d, --directory <path>`: Specify the directory to scan, update, fix, or report on.
+- `-g, --global`: Include global npm packages in the scan or report.
+- `-e, --exclude <packages>`: Exclude comma-separated packages from being scanned.
+- `-t, --threshold <level>`: Set the vulnerability severity threshold for reporting (`info`, `low`, `moderate`, `high`, or `critical`).
+- `-f, --force`: Force update or fix actions.
+- `-b, --backup`: Create a backup of the current dependency state before making changes.
 - `-u, --update-lockfile`: Update the lockfile after making changes to dependencies.
+- `-r, --report <file>`: Write the dependency and security report to a file.
+
+# Examples
+
+```bash
+# Scan the current directory
+depsweep scan
+
+# Scan for high-or-worse vulnerabilities only
+depsweep scan --threshold high
+
+# Scan globally installed packages
+depsweep scan --global
+
+# Update with a backup and a refreshed lockfile
+depsweep update --backup --update-lockfile
+
+# Apply potentially breaking security fixes
+depsweep fix --force
+
+# Write a report to a file
+depsweep report --report depsweep-report.json
+```
